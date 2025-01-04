@@ -1,11 +1,8 @@
-package assignmentone;
+package dv502_a1;
 
 /**
  * The simple hello there test class.
  */
 public class HelloThere {
-  public String hello(String name) {
-    return "Hello there, " + name; 
-  }
 
 }

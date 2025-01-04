@@ -1,4 +1,4 @@
-package assignmentone;
+package dv502_a1;
 
 /**
  * This is Javadoc comment.
