@@ -3,13 +3,8 @@
 ## Java Programming
 The first assignment is about fundamental Java Programming, but from an object oriented point of view. You will work with sequence, selection, iteration as well as arrays but you will do so in an object oriented fashion. The next assignment will continue the object oriented path even further, but this first one will introduce the basics.
 
-Assignment one should be _one_ gradle project, all classes should be in the `assignmentone` package. See instructions on Moodle for how to set this up.
+Assignment one should be _one_ gradle project, all classes should be in the `x` package. See instructions on Moodle for how to set this up.
 
-> Carefully read the assignment rules as defined on Moodle. In brief, do the assignments yourself, hand them in at the deadline and don't cheat.
->
-> Do not hesitate to ask your teaching assistant at the practical meetings (or the teacher at the lectures) if you have any problems. You can also post a question in the Slack channel for the course.
->
-> **Submission:** you submit your solution using git and GitLab following the instructions given for the course.
 
 ### Grading
 The assignment is divided into 3 steps (E, C, A). The first part is mandatory and gives the passing grade E. If you pass the automatic test cases for this part you get the E grade.  
@@ -20,7 +15,7 @@ The **A** part is optional and can (in combination with the C part) give the gra
 
 
 ### Automatic Testing and Working Process
-To aid you in your quest for knowledge you have automatic test cases in the `app/src/test/java/assignmentone` folder. In the folder you find one file for each task: e.g. `HelloThereTest.java`. In each file you find a test class and one or several test methods (i.e. test cases). These show how you can call the respective methods on each class, example input and what the expected output should be.  
+To aid you in your quest for knowledge you have automatic test cases in the `app/src/test/java/dv502_a1` folder. In the folder you find one file for each task: e.g. `HelloThereTest.java`. In each file you find a test class and one or several test methods (i.e. test cases). These show how you can call the respective methods on each class, example input and what the expected output should be.  
 
 From the start all tests are commented out and the working process would be to decomment one test case, run the test (it will fail, or not even compile as the class/method has not even been created buy you yet) and then you make the implementation, and **commit** the code. You repeat this until all test cases are passing the respective task. If you feel that it is helpful you may create additional test cases. This means you should have as many commits as there are test cases.
 
