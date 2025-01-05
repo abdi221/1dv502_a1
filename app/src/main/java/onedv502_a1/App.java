@@ -18,7 +18,7 @@ public class App {
     
     // instantiating the HelloThere class
     HelloThere instanceOfClass = new HelloThere();
-    System.out.println(instanceOfClass.greeting(name));
+    System.out.println(instanceOfClass.hello(name));
   
   }
 
@@ -45,8 +45,8 @@ public class App {
    */
   public static void main(String[] args) {
     App app = new App();
-    // app.hello();
-    app.seconds();
+    app.hello();
+    // app.seconds();
 
       
   }
