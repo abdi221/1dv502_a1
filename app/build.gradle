@@ -63,7 +63,7 @@ run {
 
 application {
     // Define the main class for the application.
-    mainClass = 'dv502_a1.App'
+    mainClass = 'onedv502_a1.App'
 }
 
 

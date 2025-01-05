@@ -1,4 +1,4 @@
-package dv502_a1;
+package onedv502_a1;
 
 /**
  * Javadoc comment.
