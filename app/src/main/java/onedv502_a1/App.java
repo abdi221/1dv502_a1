@@ -19,10 +19,21 @@ public class App {
     // instantiating the HelloThere class
     HelloThere instanceOfClass = new HelloThere();
     System.out.println(instanceOfClass.greeting(name));
+  
+  }
 
+  /**
+   * converting hours and minutes to seconds.
+   */
+  public void seconds() {
+    Time time = new Time();
 
-
-
+    System.out.print("Enter hours, minutes and seconds: ");
+    int hour = scanner.nextInt();
+    int min = scanner.nextInt();
+    int sec = scanner.nextInt();
+    int totalSeconds = time.toSeconds(hour, min, sec);
+    System.out.println("In only seconds that is: " + totalSeconds);
 
   }
 
@@ -34,7 +45,8 @@ public class App {
    */
   public static void main(String[] args) {
     App app = new App();
-    app.hello();
+    // app.hello();
+    app.seconds();
 
       
   }
