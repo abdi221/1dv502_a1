@@ -9,7 +9,7 @@ public class Album {
   private String artist;
 
   /**
-   * Constructor for album class
+   * Constructor for album class.
    */
   public Album(String name, int releaseYear, String artist) {
     this.name = name;
@@ -17,28 +17,61 @@ public class Album {
     this.artist = artist;
   }
 
+  /**
+   * This method is checking for if the char is more than 4 without whitespace.
+   *
+   * @param name returns the name.
+   *
+   */
   public void setName(String name) {
-    if (this.name == null || name.isEmpty()) {
-      throw new IllegalArgumentException("Name should not be null or empty");
+    if (name.trim().length() < 4 && name != null) { 
+      System.out.println("The name should be more than four characters long");
+      this.name = "No name";
+    } else {
+      this.name = name;
     }
-    this.name = name;
+    
   }
 
   public String getName() {
     return name;
   }
 
+  /**
+   * checks the validity of the given release year.
+   *
+   * @param releaseYear returns  the year.
+   *
+   */
   public void setYear(int releaseYear) {
-    if (this.releaseYear > 2029 || this.releaseYear < 1800) {
-      throw new IllegalArgumentException("The entered release year should not be before 1800 or after 2029");
+    if (releaseYear > 2029 || releaseYear < 1800) {
+      System.out.println("The entered release year should not be before 1800 or after 2029");
+      this.releaseYear = -1;
+    } else {
+      this.releaseYear = releaseYear;
     }
-    this.releaseYear = releaseYear;
   }
 
   public int getReleaseYear() {
     return releaseYear;
   }
 
+  /**
+   * this method is checking for improper values for artist.
+   *
+   * @param artist checks if the artist paramter is null or empty, if not assigns it to this.artist.
+   *
+   */
+  public void setArtist(String artist) {
+    if (artist == null || artist.isEmpty()) {
+      this.artist = "No artist";
+    } else {
+      this.artist = artist;
+    }
+  }
 
+  public String getArtist() {
+    return artist;
+  }
 
 }

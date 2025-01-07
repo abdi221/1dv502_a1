@@ -37,6 +37,11 @@ public class App {
 
   }
 
+  public void imInABand() {
+    Album album = new Album("Wish you were ", 1975, "Pink Floyed");
+    System.out.println(album.getName() + " here was relased " + album.getReleaseYear() + " by " + album.getArtist());
+  }
+
   /**
    * the main method to run the different tasks.
    *
@@ -45,9 +50,9 @@ public class App {
    */
   public static void main(String[] args) {
     App app = new App();
-    app.hello();
+    // app.hello();
     // app.seconds();
-
+    app.imInABand();
       
   }
 
