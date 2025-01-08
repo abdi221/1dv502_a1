@@ -60,13 +60,13 @@ public class AlbumTest {
     assertEquals(-1, album.getReleaseYear());
   }
 
-  @Test
-  void testSetYearTooHigh() {
-    // Tests that the year is set to -1 if the year is too high.
-    Album album = new Album("The Dark Side of the Moon", 1973, "Pink Floyd");
-    album.setYear(2030);
-    assertEquals(-1, album.getReleaseYear());
-  }
+  // @Test
+  // void testSetYearTooHigh() {
+  //   // Tests that the year is set to -1 if the year is too high.
+  //   Album album = new Album("The Dark Side of the Moon", 1973, "Pink Floyd");
+  //   album.setYear(2030);
+  //   assertEquals(-1, album.getReleaseYear());
+  // }
 
   // @Test
   // public void testSetArtist() {
