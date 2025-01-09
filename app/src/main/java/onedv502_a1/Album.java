@@ -66,7 +66,7 @@ public class Album {
    *
    */
   public void setArtist(String artist) {
-    if (artist != null && artist.isEmpty()) {
+    if (artist == null || artist.length() < 4) {
       this.artist = "No artist";
   } else {
       this.artist = artist;
