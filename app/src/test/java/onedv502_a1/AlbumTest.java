@@ -60,36 +60,36 @@ public class AlbumTest {
     assertEquals(-1, album.getReleaseYear());
   }
 
-  // @Test
-  // void testSetYearTooHigh() {
-  //   // Tests that the year is set to -1 if the year is too high.
-  //   Album album = new Album("The Dark Side of the Moon", 1973, "Pink Floyd");
-  //   album.setYear(2030);
-  //   assertEquals(-1, album.getReleaseYear());
-  // }
+  @Test
+  void testSetYearTooHigh() {
+    // Tests that the year is set to -1 if the year is too high.
+    Album album = new Album("The Dark Side of the Moon", 1973, "Pink Floyd");
+    album.setYear(2030);
+    assertEquals(-1, album.getReleaseYear());
+  }
 
-  // @Test
-  // public void testSetArtist() {
-  //   // Tests that the artist is set correctly.
-  //   Album album = new Album("The Dark Side of the Moon", 1973, "Pink Floyd");
-  //   album.setArtist("The Beatles");
-  //   assertEquals("The Beatles", album.getArtist());
-  // }
+  @Test
+  public void testSetArtist() {
+    // Tests that the artist is set correctly.
+    Album album = new Album("The Dark Side of the Moon", 1973, "Pink Floyd");
+    album.setArtist("The Beatles");
+    assertEquals("The Beatles", album.getArtist());
+  }
 
-  // @Test
-  // public void testSetArtistToShort() {
-  //   // Tests that the artist is set to "No artist" if the artist is too short.
-  //   Album album = new Album("The Dark Side of the Moon", 1973, "Pink Floyd");
-  //   album.setArtist("No");
-  //   assertEquals("No artist", album.getArtist());
-  // }
+  @Test
+  public void testSetArtistToShort() {
+    // Tests that the artist is set to "No artist" if the artist is too short.
+    Album album = new Album("The Dark Side of the Moon", 1973, "Pink Floyd");
+    album.setArtist("No");
+    assertEquals("No artist", album.getArtist());
+  }
 
-  // @Test
-  // void testSetArtistNull() {
-  //   // Tests that the artist is set to "No artist" if the artist is null.
-  //   Album album = new Album("The Dark Side of the Moon", 1973, "Pink Floyd");
-  //   album.setArtist(null);
-  //   assertEquals("No artist", album.getArtist());
-  // }
+  @Test
+  void testSetArtistNull() {
+    // Tests that the artist is set to "No artist" if the artist is null.
+    Album album = new Album("The Dark Side of the Moon", 1973, "Pink Floyd");
+    album.setArtist(null);
+    assertEquals("No artist", album.getArtist());
+  }
 
 }
