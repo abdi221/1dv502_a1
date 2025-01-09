@@ -46,14 +46,14 @@ public class Album {
    *
    */
   public void setYear(int releaseYear) {
-    if(releaseYear >= 1801 && releaseYear <= 2029) {
+    if (releaseYear >= 1801 && releaseYear <= 2029) {
       this.releaseYear = releaseYear;
     } else if (releaseYear < 1801 || releaseYear >= 2029) {
       System.out.println("The entered release year should not be before 1800 or after 2029");
       this.releaseYear = -1;
     }
      
-    }
+  }
 
   public int getReleaseYear() {
     return releaseYear;
@@ -61,17 +61,18 @@ public class Album {
 
   /**
    * this method is checking for improper values for artist.
-   
+   *
    * @param artist checks if the artist paramter is null or empty, if not assigns it to this.artist.
    *
    */
   public void setArtist(String artist) {
     if (artist == null || artist.length() < 4) {
       this.artist = "No artist";
-  } else {
+    } else {
       this.artist = artist;
+    }
   }
-  }
+
   public String getArtist() {
     return artist;
   }
