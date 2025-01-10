@@ -23,10 +23,9 @@ public class AlbumGenerator {
     list.add("Wish you were here ");
     list.add("Animals ");
     list.add("The Wall ");
-    String[] fourAlbums = new String[list.size()]; // create array of the same size as the list
-    for (int i = 0; i < fourAlbums.length; i++) {
-      fourAlbums[i] = list.get(i);
-
+    ArrayList<String>fourAlbums = new ArrayList<>(list.size()); // create array of the same size as the list
+    for (int i = 0; i < list.size(); i++) {
+      fourAlbums.add(list.get(i));
     }
 
   }

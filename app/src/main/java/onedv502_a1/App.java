@@ -37,9 +37,16 @@ public class App {
 
   }
 
+  /**
+   * method for the third task.
+   */
   public void imInABand() {
     Album album = new Album("Wish you were ", 1975, "Pink Floyed");
     System.out.println(album.getName() + " here was relased " + album.getReleaseYear() + " by " + album.getArtist());
+  }
+
+  public void bestAlbumEver() {
+    AlbumGenerator albumgen =  new AlbumGenerator(albumgen.getName(), 0, null);
   }
 
   /**
