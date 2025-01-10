@@ -46,7 +46,15 @@ public class App {
   }
 
   public void bestAlbumEver() {
-    AlbumGenerator albumgen =  new AlbumGenerator(albumgen.getName(), 0, null);
+    AlbumGenerator albumgen =  new AlbumGenerator();
+
+    // creating array of the class album
+    Album[] albums = albumgen.generatAlbums();
+
+    for (Album album : albums) {
+      System.out.println(album.getName() + "was released in " + album.getReleaseYear() + " by" + album.getArtist());
+    }
+
   }
 
   /**
@@ -59,7 +67,8 @@ public class App {
     App app = new App();
     // app.hello();
     // app.seconds();
-    app.imInABand();
+    // app.imInABand();
+    app.bestAlbumEver();
       
   }
 
