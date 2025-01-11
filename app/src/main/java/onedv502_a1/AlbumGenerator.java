@@ -6,7 +6,7 @@ package onedv502_a1;
 public class AlbumGenerator {
 
 
-  public Album[] generatAlbums() {
+  public Album[] generateAlbums() {
     Album[]fourAlbums = new Album[4];
     Album darkSide = new Album("Dark Side of the moon ", 1973, " Pink Floyed");
     Album wishYouWereHere = new Album("Wish you were here ", 1975, " Pink Floyed");

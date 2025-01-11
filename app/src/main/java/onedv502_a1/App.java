@@ -40,7 +40,7 @@ public class App {
   /**
    * method for the third task.
    */
-  public void imInABand() {
+  public void imInAband() {
     Album album = new Album("Wish you were ", 1975, "Pink Floyed");
     System.out.println(album.getName() + " here was relased " + album.getReleaseYear() + " by " + album.getArtist());
   }
@@ -49,7 +49,7 @@ public class App {
     AlbumGenerator albumgen =  new AlbumGenerator();
 
     // creating array of the class album
-    Album[] albums = albumgen.generatAlbums();
+    Album[] albums = albumgen.generateAlbums();
 
     for (Album album : albums) {
       System.out.println(album.getName() + "was released in " + album.getReleaseYear() + " by" + album.getArtist());
