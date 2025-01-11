@@ -43,13 +43,13 @@ public class ArrayAlgorithmsTest {
     assertEquals(expected, result);
   }
 
-//   @Test
-//   public void testShift() {
-//     int[] numbers = { 1, 2, 3, 4, 5 };
-//     int[] expected = { 2, 3, 4, 5, 1 };
-//     int[] result = arrayAlgorithms.shift(numbers);
-//     assertArrayEquals(expected, result);
-//   }
+  @Test
+  public void testShift() {
+    int[] numbers = { 1, 2, 3, 4, 5 };
+    int[] expected = { 2, 3, 4, 5, 1 };
+    int[] result = arrayAlgorithms.shift(numbers);
+    assertArrayEquals(expected, result);
+  }
 
 //   @Test
 //   public void testShuffle() {

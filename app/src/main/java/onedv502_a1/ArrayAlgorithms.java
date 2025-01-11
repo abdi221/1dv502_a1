@@ -43,6 +43,7 @@ public class ArrayAlgorithms {
   }
 
   public int minIndex(int[] minValue) {
+    
     int index =  0;
     int min = minValue[index];
 
@@ -59,6 +60,22 @@ public class ArrayAlgorithms {
      * know the difference between min value and min index; min-value mean the smallest
      * number  in the array itself. Min-index is the position where the smallest number is located 
      */
+  }
+
+  public int[] shift(int[] shiftingArray) {
+    int tempArrayElements = shiftingArray.length;  
+    int firstElement = shiftingArray[0];
+
+    for (int i = 0; i < tempArrayElements - 1; i++) {
+      shiftingArray[i] = shiftingArray[i + 1];
+    }
+    shiftingArray[tempArrayElements - 1] = firstElement;
+    for (int i = 0; i < tempArrayElements; i++) {
+      System.out.println(shiftingArray[i] + "");
+    }
+    return shiftingArray;
+
+    
   }
 
 
