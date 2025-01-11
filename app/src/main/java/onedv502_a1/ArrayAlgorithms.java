@@ -33,18 +33,33 @@ public class ArrayAlgorithms {
   
   public int maxValue(int[] valueMax) {
     int max = valueMax[0];
-
-    // traverse the  elements from second and  compare with current max
+    
+    // traverse the  elements from second and compare with current max
     for (int i = 1; i < valueMax.length; i++) {
       max = valueMax[i];
     }
     return max;
      
   }
-  
 
+  public int minIndex(int[] minValue) {
+    int index =  0;
+    int min = minValue[index];
 
-   
- 
+    for (int i = 1; i < minValue.length; i++) {
+      if (minValue[i] <= min) {
+        min = minValue[i];
+        index = i;
+      }
+    }
+    return index;
+    /**
+     * Note to self:
+     * you need to keep track of the task is specifically asking you to run
+     * know the difference between min value and min index; min-value mean the smallest
+     * number  in the array itself. Min-index is the position where the smallest number is located 
+     */
+  }
+
 
 }

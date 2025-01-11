@@ -35,13 +35,13 @@ public class ArrayAlgorithmsTest {
 //     assertEquals(expected, result);
 //   }
 
-//   @Test
-//   public void testMinIndex() {
-//     int[] numbers = { 5, 3, 1, 4, 2 };
-//     int expected = 2;
-//     int result = arrayAlgorithms.minIndex(numbers);
-//     assertEquals(expected, result);
-//   }
+  @Test
+  public void testMinIndex() {
+    int[] numbers = { 5, 3, 1, 4, 2 };
+    int expected = 2;
+    int result = arrayAlgorithms.minIndex(numbers);
+    assertEquals(expected, result);
+  }
 
 //   @Test
 //   public void testShift() {
