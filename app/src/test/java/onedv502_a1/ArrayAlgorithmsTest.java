@@ -19,13 +19,13 @@ public class ArrayAlgorithmsTest {
     assertEquals(expected, result, 0.01);
   }
 
-//   @Test
-//   public void testMaxValue() {
-//     int[] numbers = { 1, 2, 3, 4, 5 };
-//     int expected = 5;
-//     int result = arrayAlgorithms.maxValue(numbers);
-//     assertEquals(expected, result);
-//   }
+  @Test
+  public void testMaxValue() {
+    int[] numbers = { 1, 2, 3, 4, 5 };
+    int expected = 5;
+    int result = arrayAlgorithms.maxValue(numbers);
+    assertEquals(expected, result);
+  }
 
 //   @Test
 //   public void testMaxValueNegatives() {
