@@ -1,24 +1,23 @@
 package onedv502_a1;
-// package idV502_a1;
 
-// import static org.junit.jupiter.api.Assertions.assertEquals;
-// import static org.junit.jupiter.api.Assertions.assertArrayEquals;
-// import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-// import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Test;
 
-// /** Test class for ArrayAlgorithms. */
-// public class ArrayAlgorithmsTest {
-//   // Decomment this first as it is used in every test method
-//   ArrayAlgorithms arrayAlgorithms = new ArrayAlgorithms();
+/** Test class for ArrayAlgorithms. */
+public class ArrayAlgorithmsTest {
+  // Decomment this first as it is used in every test method
+  ArrayAlgorithms arrayAlgorithms = new ArrayAlgorithms();
 
-//   @Test
-//   public void testAverage() {
-//     int[] numbers = { 1, 2, 3, 4, 5 };
-//     double expected = 3.0;
-//     double result = arrayAlgorithms.average(numbers);
-//     assertEquals(expected, result, 0.01);
-//   }
+  @Test
+  public void testAverage() {
+    int[] numbers = { 1, 2, 3, 4, 5 };
+    double expected = 3.0;
+    double result = arrayAlgorithms.average(numbers);
+    assertEquals(expected, result, 0.01);
+  }
 
 //   @Test
 //   public void testMaxValue() {
@@ -79,4 +78,4 @@ package onedv502_a1;
 //     return false;
 //   }
 
-// }
+ }
