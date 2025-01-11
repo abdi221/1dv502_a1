@@ -57,8 +57,8 @@ public class ArrayAlgorithms {
     return index;
     /**
      * Note to self:
-     * you need to keep track of the task is specifically asking you to run
-     * know the difference between min value and min index; min-value mean the smallest
+     * - you need to keep track of the task that is specifically asking you to run
+     * - know the difference between min value and min index; min-value mean the smallest
      * number  in the array itself. Min-index is the position where the smallest number is located 
      */
   }
