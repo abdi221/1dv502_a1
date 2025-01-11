@@ -1,5 +1,6 @@
 package onedv502_a1;
 
+import java.util.Random;
 
 /**
  * Javadoc comment.
@@ -43,7 +44,7 @@ public class ArrayAlgorithms {
   }
 
   public int minIndex(int[] minValue) {
-    
+
     int index =  0;
     int min = minValue[index];
 
@@ -76,6 +77,23 @@ public class ArrayAlgorithms {
     return shiftingArray;
 
     
+  }
+
+  public int[] shuffle(int[] arrayShuffle) {
+    int shuffleElements = arrayShuffle.length;
+
+    Random r = new Random();
+    for (int i = shuffleElements - 1; i > 0; i--) {
+      // random index from 0 to i
+      int indx = r.nextInt(i + 1);
+
+      int swapOnce = arrayShuffle[i];
+      arrayShuffle[i] = arrayShuffle[indx];
+      arrayShuffle[indx] = swapOnce;
+
+
+    }
+    return arrayShuffle;
   }
 
 

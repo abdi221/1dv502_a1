@@ -51,31 +51,31 @@ public class ArrayAlgorithmsTest {
     assertArrayEquals(expected, result);
   }
 
-//   @Test
-//   public void testShuffle() {
-//     int[] numbers = { 1, 2, 3, 4, 5 };
-//     int[] result = arrayAlgorithms.shuffle(numbers);
-//     // Assert that the array contains the same elements but in a different order
-//     assertEquals(numbers.length, result.length);
-//     assertTrue(containsAll(numbers, result));
-//   }
+  @Test
+  public void testShuffle() {
+    int[] numbers = { 1, 2, 3, 4, 5 };
+    int[] result = arrayAlgorithms.shuffle(numbers);
+    // Assert that the array contains the same elements but in a different order
+    assertEquals(numbers.length, result.length);
+    assertTrue(containsAll(numbers, result));
+  }
 
-//   private boolean containsAll(int[] arr1, int[] arr2) {
-//     for (int i = 0; i < arr1.length; i++) {
-//       if (!contains(arr1[i], arr2)) {
-//         return false;
-//       }
-//     }
-//     return true;
-//   }
+  private boolean containsAll(int[] arr1, int[] arr2) {
+    for (int i = 0; i < arr1.length; i++) {
+      if (!contains(arr1[i], arr2)) {
+        return false;
+      }
+    }
+    return true;
+  }
 
-//   private boolean contains(int n, int[] arr) {
-//     for (int i = 0; i < arr.length; i++) {
-//       if (arr[i] == n) {
-//         return true;
-//       }
-//     }
-//     return false;
-//   }
+  private boolean contains(int n, int[] arr) {
+    for (int i = 0; i < arr.length; i++) {
+      if (arr[i] == n) {
+        return true;
+      }
+    }
+    return false;
+  }
 
  }
