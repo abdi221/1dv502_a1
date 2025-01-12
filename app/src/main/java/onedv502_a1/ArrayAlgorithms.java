@@ -43,14 +43,14 @@ public class ArrayAlgorithms {
      
   }
 
-  public int minIndex(int[] minValue) {
+  public int minIndex(int[] minIndx) {
 
     int index =  0;
-    int min = minValue[index];
+    int min = minIndx[index];
 
-    for (int i = 1; i < minValue.length; i++) {
-      if (minValue[i] <= min) {
-        min = minValue[i];
+    for (int i = 1; i < minIndx.length; i++) {
+      if (minIndx[i] <= min) {
+        min = minIndx[i];
         index = i;
       }
     }

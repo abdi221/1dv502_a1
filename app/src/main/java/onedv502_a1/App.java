@@ -59,14 +59,38 @@ public class App {
   }
 
   public void workingWithArrays() {
-    System.out.println("Give me some numbes to return avgValue, maxValue, minValue, etc..");
+    System.out.println("Give me a limit of how long the array is supposed to be:");
     int num = scanner.nextInt();
     ArrayList<Integer> elements = new ArrayList<>();
     ArrayAlgorithms arrayAlgo = new ArrayAlgorithms();
+
+    for (int i = 0; i < num; i++) {
+      System.out.println("Enter a number " + (i + 1) +  ": ");
+      int userInput = scanner.nextInt();
+      elements.add(userInput); // this adds every number from the user
+    }
+
     
-    
-    
-    
+    int[] arrayFromList = new int[elements.size()];
+    for (int i = 0; i < elements.size(); i++) {
+      arrayFromList[i] = elements.get(i);
+    }
+
+    // computing average:
+    double average = arrayAlgo.average(arrayFromList);
+    System.out.println("The average of the elements of the array is: " + average);
+
+    // finding the minIndex of the value 
+    int minIndex = arrayAlgo.minIndex(arrayFromList);
+    System.out.println("The index of the minimum value is" + minIndex);
+
+    //shifting the array to the left and then shuffling the array randomly
+    int[] shifting = arrayAlgo.shift(arrayFromList);
+    System.out.println("Shifted to the left...: " + shifting);
+
+    int[] shuffling = arrayAlgo.shuffle(arrayFromList);
+    System.out.println("When shuffle the array: " + shuffling);
+
   
   }
 
@@ -81,7 +105,8 @@ public class App {
     // app.hello();
     // app.seconds();
     // app.imInABand();
-    app.bestAlbumEver();
+    // app.bestAlbumEver();
+    app.workingWithArrays();
       
   }
 
