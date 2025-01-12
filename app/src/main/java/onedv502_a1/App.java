@@ -1,5 +1,6 @@
 package onedv502_a1;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 // import org.checkerframework.checker.units.qual.min;
 
@@ -55,6 +56,16 @@ public class App {
       System.out.println(album.getName() + "was released in " + album.getReleaseYear() + " by" + album.getArtist());
     }
 
+  }
+
+  public void workingWithArrays() {
+    System.out.println("Give me some numbes to return avgValue, maxValue, minValue, etc..");
+    int num = scanner.nextInt();
+    ArrayList<Integer> elements = new ArrayList<>();
+    
+    
+    
+  
   }
 
   /**
