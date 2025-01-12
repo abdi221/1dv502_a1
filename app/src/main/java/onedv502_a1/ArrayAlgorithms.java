@@ -64,34 +64,36 @@ public class ArrayAlgorithms {
   }
 
   public int[] shift(int[] shiftingArray) {
-    int tempArrayElements = shiftingArray.length;  
-    int firstElement = shiftingArray[0];
+    int tempArrayElements = shiftingArray.length;  // length of the conveyor
+    int firstElement = shiftingArray[0]; // the firsr box to the left that would have to reappear
 
-    for (int i = 0; i < tempArrayElements - 1; i++) {
+    // you move one box to the left until you reach the left edge
+    for (int i = 0; i < tempArrayElements - 1; i++) { // essentially you move a box from position i + 1 to i
       shiftingArray[i] = shiftingArray[i + 1];
     }
-    shiftingArray[tempArrayElements - 1] = firstElement;
-    for (int i = 0; i < tempArrayElements; i++) {
-      System.out.println(shiftingArray[i] + "");
-    }
-    return shiftingArray;
-
-    
+    shiftingArray[tempArrayElements - 1] = firstElement; // when the loop ends, the first box becomes the last and we  ended it there 
+    return shiftingArray; // returns the current conveyer structure
   }
 
   public int[] shuffle(int[] arrayShuffle) {
-    int shuffleElements = arrayShuffle.length;
+    int shuffleElements = arrayShuffle.length;  
 
     Random r = new Random();
-    for (int i = shuffleElements - 1; i > 0; i--) {
+    for (int i = shuffleElements - 1; i > 0; i--) { // looking at the last card of the deck (i)
       // random index from 0 to i
       int indx = r.nextInt(i + 1);
 
+
+      /**
+       *imagine two cups of liquid that you want to exchange without spilling. You need a third empty cup to hold the contents of the first cup temporarily:
+        1. Pour the contents of Cup A into the spare cup.   
+        2. Pour the contents of Cup B into Cup A.  
+        3. Pour the contents from the spare cup into Cup B.
+        In code, `swapOnce` is like that third cup—somewhere to hold one value temporarily so you can swap the two values without losing any information.
+       */
       int swapOnce = arrayShuffle[i];
       arrayShuffle[i] = arrayShuffle[indx];
       arrayShuffle[indx] = swapOnce;
-
-
     }
     return arrayShuffle;
   }

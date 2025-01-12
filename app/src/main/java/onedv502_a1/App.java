@@ -62,6 +62,8 @@ public class App {
     System.out.println("Give me some numbes to return avgValue, maxValue, minValue, etc..");
     int num = scanner.nextInt();
     ArrayList<Integer> elements = new ArrayList<>();
+    ArrayAlgorithms arrayAlgo = new ArrayAlgorithms();
+    
     
     
     
