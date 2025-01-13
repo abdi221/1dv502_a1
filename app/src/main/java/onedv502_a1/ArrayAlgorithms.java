@@ -3,10 +3,18 @@ package onedv502_a1;
 import java.util.Random;
 
 /**
- * Javadoc comment.
+ * working with array and learning shi.
+ *
  */
 public class ArrayAlgorithms {
 
+  /**
+   * finding the avg
+   *
+   * @param averageValue holds all the elements.
+   *
+   * @return the avg element.
+  */
   public double average(int[] averageValue) {
     int sum = 0;
     int length = averageValue.length;
@@ -17,21 +25,29 @@ public class ArrayAlgorithms {
     double avg = sum / length;
     return avg;
 
-    /**
-     * Note to self:
-     * Whenever you have a method expecting to operate a paramter on an array, 
-     * you have to actually use that paramter in the method body. Before your method was
-     * hardcoded to use the class's own array rather than whatever the was passed in from
-     * the outside.
-     * This is what the test was complaining about, it never got its own values factored into the average.
-     */
-    /**
-     * You learned:
-     * - pass data into methods through parameters
-     * - use those parameters rather than unrelated variable inside the method 
-     */
+  /**
+   * Note to self:
+   * Whenever you have a method expecting to operate a paramter on an array, 
+   * you have to actually use that paramter in the method body. Before your method was
+   * hardcoded to use the class's own array rather than whatever the was passed in from
+   * the outside.
+   * This is what the test was complaining about, it never got its own values factored into the average.
+   */
+  /**
+   * You learned:
+   * - pass data into methods through parameters
+   * - use those parameters rather than unrelated variable inside the method 
+   */
   }
   
+  /**
+   * determines the largest element in the array.
+   *
+   * @param valueMax holds all the elements.
+   *
+   * @return the biggest element.
+   *
+  */
   public int maxValue(int[] valueMax) {
     int max = valueMax[0];
     
@@ -43,6 +59,14 @@ public class ArrayAlgorithms {
      
   }
 
+  /**
+   * this method is findining the position of the smallest element.
+   *
+   * @param minIndx holds the elements.
+   *
+   *  @return the postion of the smallest index.
+   *
+  */
   public int minIndex(int[] minIndx) {
 
     int index =  0;
@@ -55,14 +79,22 @@ public class ArrayAlgorithms {
       }
     }
     return index;
-    /**
-     * Note to self:
-     * - you need to keep track of the task that is specifically asking you to run
-     * - know the difference between min value and min index; min-value mean the smallest
-     * number  in the array itself. Min-index is the position where the smallest number is located 
-     */
+  /**
+   * Note to self:
+   * - you need to keep track of the task that is specifically asking you to run
+   * - know the difference between min value and min index; min-value mean the smallest
+   * number  in the array itself. Min-index is the position where the smallest number is located 
+   */
   }
 
+  /**
+   * this method supposed to shift all the elements to the left.
+   *
+   * @param shiftingArray holds the elements.
+   *
+   *  @return a shifted elements to the left.
+   *
+  */
   public int[] shift(int[] shiftingArray) {
     int tempArrayElements = shiftingArray.length;  // length of the conveyor
     int firstElement = shiftingArray[0]; // the firsr box to the left that would have to reappear
@@ -75,6 +107,14 @@ public class ArrayAlgorithms {
     return shiftingArray; // returns the current conveyer structure
   }
 
+  /**
+   * supposed to randomly shuffle the elements.
+   *
+   * @param arrayShuffle holds the suppposed elements.
+   *
+   * @return a shuffled elements.
+   *
+   */
   public int[] shuffle(int[] arrayShuffle) {
     int shuffleElements = arrayShuffle.length;  
 
@@ -84,13 +124,16 @@ public class ArrayAlgorithms {
       int indx = r.nextInt(i + 1);
 
 
-      /**
-       *imagine two cups of liquid that you want to exchange without spilling. You need a third empty cup to hold the contents of the first cup temporarily:
-        1. Pour the contents of Cup A into the spare cup.   
-        2. Pour the contents of Cup B into Cup A.  
-        3. Pour the contents from the spare cup into Cup B.
-        In code, `swapOnce` is like that third cup—somewhere to hold one value temporarily so you can swap the two values without losing any information.
-       */
+  
+  /**
+    *imagine two cups of liquid that you want to exchange without spilling.
+    You need a third empty cup to hold the contents of the first cup temporarily:
+    1. Pour the contents of Cup A into the spare cup.   
+    2. Pour the contents of Cup B into Cup A.  
+    3. Pour the contents from the spare cup into Cup B.
+    In code, `swapOnce` is like that third cup—somewhere to hold one 
+    value temporarily so you can swap the two values without losing any information.
+    */
       int swapOnce = arrayShuffle[i];
       arrayShuffle[i] = arrayShuffle[indx];
       arrayShuffle[indx] = swapOnce;

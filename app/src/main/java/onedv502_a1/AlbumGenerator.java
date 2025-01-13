@@ -14,8 +14,7 @@ public class AlbumGenerator {
     Album theWall = new Album("The Wall ", 1979, " Pink Floyed");
     fourAlbums[0] = darkSide;
     fourAlbums[1] = wishYouWereHere;
-    fourAlbums[2] = animals;
-    fourAlbums[3] = theWall;
+    fourAlbums[2] = animals; fourAlbums[3] = theWall;
     return fourAlbums;
   }
   
