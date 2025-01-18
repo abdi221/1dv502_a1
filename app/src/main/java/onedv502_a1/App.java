@@ -1,6 +1,5 @@
 package onedv502_a1;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 // import org.checkerframework.checker.units.qual.min;
 

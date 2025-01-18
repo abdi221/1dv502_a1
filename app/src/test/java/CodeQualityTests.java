@@ -134,7 +134,6 @@ public class CodeQualityTests {
       HashMap<String, TestCase> bugInstances = new HashMap<>();
 
       // we should actually add all the checked files first so we can get some passing tests too
-      // TODO: this should use the FileStats tag instead
       NodeList classNodes = doc.getElementsByTagName("FileStats");
       for (int cnIx = 0; cnIx < classNodes.getLength(); cnIx++) {
         String fileName = classNodes.item(cnIx).getAttributes().getNamedItem("path").getNodeValue();
