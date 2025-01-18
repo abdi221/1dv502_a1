@@ -46,6 +46,9 @@ public class App {
     System.out.println(album.getName() + " here was relased " + album.getReleaseYear() + " by " + album.getArtist());
   }
 
+  /**
+   * calling albumgenerator in this method.
+   */
   public void bestAlbumEver() {
     AlbumGenerator albumgen =  new AlbumGenerator();
 
@@ -58,38 +61,38 @@ public class App {
 
   }
 
+  /**
+   * calling arrayalgo in this method.
+   */
   public void workingWithArrays() {
-    System.out.println("Give me a limit of how long the array is supposed to be:");
-    int num = scanner.nextInt();
-    ArrayList<Integer> elements = new ArrayList<>();
-    ArrayAlgorithms arrayAlgo = new ArrayAlgorithms();
+    int[] arrayElements = {5, 2, 6, 4, 1, 3, 7, 9, 8};
+    ArrayAlgorithms arrayAlgorithms = new ArrayAlgorithms();
 
-    for (int i = 0; i < num; i++) {
-      System.out.println("Enter a number " + (i + 1) +  ": ");
-      int userInput = scanner.nextInt();
-      elements.add(userInput); // this adds every number from the user
-    }
-
-    
-    int[] arrayFromList = new int[elements.size()];
-    for (int i = 0; i < elements.size(); i++) {
-      arrayFromList[i] = elements.get(i);
-    }
 
     // computing average:
-    double average = arrayAlgo.average(arrayFromList);
+    double average = arrayAlgorithms.average(arrayElements);
     System.out.println("The average of the elements of the array is: " + average);
 
     // finding the minIndex of the value 
-    int minIndex = arrayAlgo.minIndex(arrayFromList);
+    int minIndex = arrayAlgorithms.minIndex(arrayElements);
     System.out.println("The index of the minimum value is" + minIndex);
 
     //shifting the array to the left and then shuffling the array randomly
-    int[] shifting = arrayAlgo.shift(arrayFromList);
+    int[] shifting = arrayAlgorithms.shift(arrayElements);
     System.out.println("Shifted to the left...: " + shifting);
 
-    int[] shuffling = arrayAlgo.shuffle(arrayFromList);
+    int[] shuffling = arrayAlgorithms.shuffle(arrayElements);
     System.out.println("When shuffle the array: " + shuffling);
+
+    for (int i = 0; i < shuffling.length; i++) {
+      System.out.println(shuffling[i]);
+
+      // adding , if thats not the last element
+      if (i != shuffling.length - 1) {
+        System.out.println(", ");
+      }
+
+    }
 
   
   }

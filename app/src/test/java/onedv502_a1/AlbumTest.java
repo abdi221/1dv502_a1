@@ -35,7 +35,7 @@ public class AlbumTest {
     album.setName("No");
     assertEquals("No name", album.getName());
   }
-
+ 
   @Test
   void testSetNameNull() {
     // Tests that the name is set to "No name" if the name is null.

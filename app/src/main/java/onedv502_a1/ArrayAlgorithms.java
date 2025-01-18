@@ -7,9 +7,11 @@ import java.util.Random;
  *
  */
 public class ArrayAlgorithms {
+  private static final Random random = new Random();
+
 
   /**
-   * finding the avg
+   * finding the avg.
    *
    * @param averageValue holds all the elements.
    *
@@ -22,22 +24,25 @@ public class ArrayAlgorithms {
     for (int i = 0; i < averageValue.length; i++) {
       sum += averageValue[i]; // adding togher every element in the array and then storing it in sum
     }
-    double avg = sum / length;
-    return avg;
+    if (length == 0) {
+      throw new IllegalArgumentException("Cannot divide by 0");
+    } else {
+      double avg = (double) sum / length;
+      return avg;
+    }
+  
+    // Note to self:
+    // Whenever you have a method expecting to operate a paramter on an array, 
+    // you have to actually use that paramter in the method body. Before your method was
+    // hardcoded to use the class's own array rather than whatever the was passed in from
+    // the outside.
+    // This is what the test was complaining about, it never got its own values factored into the average.
+  
+  
+    // You learned:
+    // - pass data into methods through parameters
+    // - use those parameters rather than unrelated variable inside the method 
 
-  /**
-   * Note to self:
-   * Whenever you have a method expecting to operate a paramter on an array, 
-   * you have to actually use that paramter in the method body. Before your method was
-   * hardcoded to use the class's own array rather than whatever the was passed in from
-   * the outside.
-   * This is what the test was complaining about, it never got its own values factored into the average.
-   */
-  /**
-   * You learned:
-   * - pass data into methods through parameters
-   * - use those parameters rather than unrelated variable inside the method 
-   */
   }
   
   /**
@@ -79,12 +84,12 @@ public class ArrayAlgorithms {
       }
     }
     return index;
-  /**
-   * Note to self:
-   * - you need to keep track of the task that is specifically asking you to run
-   * - know the difference between min value and min index; min-value mean the smallest
-   * number  in the array itself. Min-index is the position where the smallest number is located 
-   */
+  
+    // Note to self:
+    // -you need to keep track of the task that is specifically asking you to run
+    // - know the difference between min value and min index; min-value mean the smallest
+    // number  in the array itself. Min-index is the position where the smallest number is located 
+   
   }
 
   /**
@@ -103,7 +108,8 @@ public class ArrayAlgorithms {
     for (int i = 0; i < tempArrayElements - 1; i++) { // essentially you move a box from position i + 1 to i
       shiftingArray[i] = shiftingArray[i + 1];
     }
-    shiftingArray[tempArrayElements - 1] = firstElement; // when the loop ends, the first box becomes the last and we  ended it there 
+    // when the loop ends, the first box becomes the last and we  ended it there 
+    shiftingArray[tempArrayElements - 1] = firstElement; 
     return shiftingArray; // returns the current conveyer structure
   }
 
@@ -118,22 +124,19 @@ public class ArrayAlgorithms {
   public int[] shuffle(int[] arrayShuffle) {
     int shuffleElements = arrayShuffle.length;  
 
-    Random r = new Random();
     for (int i = shuffleElements - 1; i > 0; i--) { // looking at the last card of the deck (i)
       // random index from 0 to i
-      int indx = r.nextInt(i + 1);
-
+      int indx = random.nextInt(i + 1);
 
   
-  /**
-    *imagine two cups of liquid that you want to exchange without spilling.
-    You need a third empty cup to hold the contents of the first cup temporarily:
-    1. Pour the contents of Cup A into the spare cup.   
-    2. Pour the contents of Cup B into Cup A.  
-    3. Pour the contents from the spare cup into Cup B.
-    In code, `swapOnce` is like that third cup—somewhere to hold one 
-    value temporarily so you can swap the two values without losing any information.
-    */
+      // imagine two cups of liquid that you want to exchange without spilling.
+      // You need a third empty cup to hold the contents of the first cup temporarily:
+      // 1. Pour the contents of Cup A into the spare cup.   
+      // 2. Pour the contents of Cup B into Cup A.  
+      // 3. Pour the contents from the spare cup into Cup B.
+      // In code, `swapOnce` is like that third cup—somewhere to hold one 
+      // value temporarily so you can swap the two values without losing any information.
+    
       int swapOnce = arrayShuffle[i];
       arrayShuffle[i] = arrayShuffle[indx];
       arrayShuffle[indx] = swapOnce;

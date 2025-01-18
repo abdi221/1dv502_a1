@@ -24,10 +24,7 @@ public class Album {
    *
    */
   public void setName(String name) {
-    if (name.isEmpty()) {
-      this.name = "No name";
-    } else if (name != null && name.trim().length() < 4) { 
-      System.out.println("The name should be more than four characters long");
+    if (name == null || name.isEmpty() || name.trim().length() < 4) {
       this.name = "No name";
     } else {
       this.name = name;
