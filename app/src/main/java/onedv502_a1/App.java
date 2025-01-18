@@ -74,7 +74,7 @@ public class App {
 
     // finding the minIndex of the value 
     int minIndex = arrayAlgorithms.minIndex(arrayElements);
-    System.out.println("The index of the minimum value is" + minIndex);
+    System.out.println("The index of the minimum value is " + minIndex);
 
     //shifting the array to the left and then shuffling the array randomly
     int[] shifting = arrayAlgorithms.shift(arrayElements);
@@ -84,14 +84,15 @@ public class App {
     System.out.println("When shuffle the array: " + shuffling);
 
     for (int i = 0; i < shuffling.length; i++) {
-      System.out.println(shuffling[i]);
+      System.out.print(shuffling[i]);
 
       // adding , if thats not the last element
       if (i != shuffling.length - 1) {
-        System.out.println(", ");
+        System.out.print(", ");
+        
       }
-
     }
+    System.out.println();
 
   
   }

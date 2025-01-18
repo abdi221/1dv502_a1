@@ -1,15 +1,15 @@
 package onedv502_a1;
 
-// import static org.junit.jupiter.api.Assertions.assertEquals;
-// import static org.junit.jupiter.api.Assertions.assertTrue;
-// import static org.junit.jupiter.api.Assertions.assertFalse;
-// import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
-// import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Test;
 
 public class GradeCTest {
     
-  /*@Test
+  @Test
   public void calculator_testAdd() {
     // Tests that the calculator add method works correctly.
     Calculator c = new Calculator();
@@ -20,7 +20,7 @@ public class GradeCTest {
     assertEquals(0, c.add(1.0, -1.0));
     assertEquals(-2, c.add(-1.0, -1.0));
 
-  }*/
+  }
 
 
   /*@Test
