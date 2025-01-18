@@ -11,7 +11,7 @@ public class Calculator {
    * 
    * @return the sum of the two numbers.
    */
-  public int add(int x, int y) {
+  public double add(double x, double y) {
     return x + y;
 
   }
