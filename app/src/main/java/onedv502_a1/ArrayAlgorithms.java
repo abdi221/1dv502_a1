@@ -2,6 +2,8 @@ package onedv502_a1;
 
 import java.util.Random;
 
+import org.checkerframework.checker.units.qual.s;
+
 /**
  * working with array and learning shi.
  *
@@ -142,6 +144,21 @@ public class ArrayAlgorithms {
       arrayShuffle[indx] = swapOnce;
     }
     return arrayShuffle;
+  }
+
+  public int sum(int[][] sum) {
+    [][] array = {
+                {5, 2}, {9, 8}, 
+                {1, 3, 7,}, 
+                {6, 4}
+              };
+    for (int i = 0; i < array.length; i++) {
+      for (int j = 0; j < array[i].length; j++) {
+        System.out.println(array[i][j] + "");
+      }
+    }
+    return (sum);
+
   }
 
 
