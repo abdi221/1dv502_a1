@@ -147,17 +147,18 @@ public class ArrayAlgorithms {
   }
 
   public int sum(int[][] sum) {
-    [][] array = {
+    int[][] array = {
                 {5, 2}, {9, 8}, 
                 {1, 3, 7,}, 
                 {6, 4}
               };
+    int totalSum = 0;
     for (int i = 0; i < array.length; i++) {
       for (int j = 0; j < array[i].length; j++) {
-        System.out.println(array[i][j] + "");
+        totalSum += array[i][j];
       }
     }
-    return (sum);
+    return totalSum;
 
   }
 
