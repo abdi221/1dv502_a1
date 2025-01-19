@@ -23,7 +23,7 @@ public class GradeCTest {
   }
 
 
-  /*@Test
+  @Test
   public void calculator_testSubtract() {
     // Tests that the calculator subtract method works correctly.
     Calculator c = new Calculator();
@@ -32,10 +32,10 @@ public class GradeCTest {
     assertEquals(-2, c.subtract(-1.0, 1.0));
     assertEquals(2, c.subtract(1.0, -1.0));
     assertEquals(0, c.subtract(-1.0, -1.0));
-  }*/
+  }
 
 
-  /*@Test
+  @Test
   public void calculator_testMultiply() {
     // Tests that the calculator multiply method works correctly.
     Calculator c = new Calculator();
@@ -44,10 +44,10 @@ public class GradeCTest {
     assertEquals(-1, c.multiply(-1.0, 1.0));
     assertEquals(-1, c.multiply(1.0, -1.0));
     assertEquals(1, c.multiply(-1.0, -1.0));
-  }*/
+  }
 
 
-  /*@Test
+  @Test
   public void calculator_testDivide() {
     // Tests that the calculator divide method works correctly.
     Calculator c = new Calculator();
@@ -61,7 +61,7 @@ public class GradeCTest {
     // Tests that the calculator divide method sets the divideByZero field to false if the denominator is not 0.
     c.divide(1.0, 1.0);
     assertFalse(c.isDivideByZero());
-  }*/
+  }
 
 
   /*@Test
