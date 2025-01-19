@@ -45,8 +45,7 @@ public class Album {
   public void setYear(int releaseYear) {
     if (releaseYear >= 1801 && releaseYear <= 2029) {
       this.releaseYear = releaseYear;
-    } else if (releaseYear < 1801 || releaseYear >= 2029) {
-      System.out.println("The entered release year should not be before 1800 or after 2029");
+    } else {
       this.releaseYear = -1;
     }
      
