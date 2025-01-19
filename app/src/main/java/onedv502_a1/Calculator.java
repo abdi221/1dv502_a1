@@ -1,6 +1,8 @@
 package onedv502_a1;
 
-
+/**
+ * class declaration.
+ */
 public class Calculator {
   private boolean divideByZero; 
   /**
@@ -12,6 +14,7 @@ public class Calculator {
    * 
    * @return the sum of the two numbers.
    */
+  
   public double add(double x, double y) {
     return x + y;
 
@@ -58,7 +61,7 @@ public class Calculator {
       return 0.0;
     }
     return x / y;
-    }
+  }
   
   public boolean isDivideByZero() {
     return divideByZero;

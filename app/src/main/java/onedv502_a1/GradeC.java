@@ -7,12 +7,13 @@ import java.util.Scanner;
  * Make sure you uncomment the corresponding test cases.
  */
 public class GradeC {
-    Scanner scanner = new Scanner(System.in, "UTF-8");
+  Scanner scanner = new Scanner(System.in, "UTF-8");
   /**
    * Solution to the calcutlator task.
    *
    * @param input is the scanner used to read input from the user.
    */
+
   public void calculator(Scanner input) {
     Calculator calc = new Calculator();
     System.out.println("Welcome to basic calculator: \nInput two numbers:");
@@ -22,19 +23,20 @@ public class GradeC {
     int secondNum = scanner.nextInt();
     System.out.println("What operation (+, -, *, /) do you like to perform? ");
     String operation = scanner.nextLine();
-    
+
+    // TODO: create a while loop
     // based on the operation user chose, convert the variable to the desired datatype
     if (operation == "/") {
       System.out.println("The qoutent is " + calc.divide(firstNum, secondNum));
     } else if (operation == "+") {
       System.out.println("The sum of %d + %d = " + firstNum + secondNum
-      + calc.add(firstNum, secondNum));
+          + calc.add(firstNum, secondNum));
     } else if (operation == "-") {
       System.out.println("The difference between of %d and %d: " + firstNum + secondNum + " = " 
-      + calc.subtract(firstNum, secondNum));
+          + calc.subtract(firstNum, secondNum));
     } else if (operation == "*") {
       System.out.println("Multiplying  %d and %d would be " + firstNum + secondNum
-      + calc.multiply(firstNum, secondNum));
+          + calc.multiply(firstNum, secondNum));
     } else {
       System.out.println("Invalid operation.....");
     }

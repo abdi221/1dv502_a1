@@ -7,8 +7,9 @@ import java.util.Scanner;
  * This is the main class for the assignment.
  */
 public class App {
-  private GradeC c = new GradeC();
+  private GradeC calc = new GradeC();
   Scanner scanner = new Scanner(System.in, "UTF-8");
+  
   /**
    * method that handles the greeting.
    */
@@ -98,7 +99,7 @@ public class App {
   }
 
   public void gradc() {
-    c.calculator(scanner);
+    calc.calculator(scanner);
   }
 
 
