@@ -7,8 +7,8 @@ import java.util.Scanner;
  * This is the main class for the assignment.
  */
 public class App {
+  private GradeC c = new GradeC();
   Scanner scanner = new Scanner(System.in, "UTF-8");
-
   /**
    * method that handles the greeting.
    */
@@ -97,6 +97,11 @@ public class App {
   
   }
 
+  public void gradc() {
+    c.calculator(scanner);
+  }
+
+
   /**
    * the main method to run the different tasks.
    *
@@ -109,8 +114,8 @@ public class App {
     // app.seconds();
     // app.imInABand();
     // app.bestAlbumEver();
-    app.workingWithArrays();
-      
+    // app.workingWithArrays();
+    app.gradc();
   }
 
 }
