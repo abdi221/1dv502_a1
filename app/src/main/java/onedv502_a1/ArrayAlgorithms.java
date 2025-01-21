@@ -166,13 +166,13 @@ public class ArrayAlgorithms {
       return array;
     }
     int width = array.length;
-    int height = array[0].length; // this must be first column 
+    int height = array[0].length; // number of column 
 
-    int[][] new_array = new int[height][width];
+    int[][] new_array = new int[height][width]; // dimension are swapped
 
     for (int i = 0; i < width; i++) {
       for (int j = 0; j < height; j++) {
-        new_array[j][i] = new_array[i][j];
+        new_array[j][i] = array[i][j]; //swap rows and columns
       }
 
     }
@@ -180,6 +180,20 @@ public class ArrayAlgorithms {
 
   }
 
+  public int diagonalSum(int[][] theSum) {
+    // handling non square matrices 
+    if (theSum.length != theSum[0].length) {
+      return 0;
+    }
+
+    int totalSum = 0;
+    for (int i = 0; i < theSum.length; i++) {
+      totalSum += theSum[i][i];
+    }
+    return totalSum;
+
+    
+  }
 
 
 }
