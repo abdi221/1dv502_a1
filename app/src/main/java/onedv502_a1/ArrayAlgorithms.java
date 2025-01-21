@@ -2,8 +2,6 @@ package onedv502_a1;
 
 import java.util.Random;
 
-import org.checkerframework.checker.units.qual.s;
-
 /**
  * working with array and learning shi.
  *
@@ -148,7 +146,8 @@ public class ArrayAlgorithms {
 
   public int sum(int[][] sum) {
     int[][] array = {
-                {5, 2}, {9, 8}, 
+                {5, 2}, 
+                {9, 8}, 
                 {1, 3, 7,}, 
                 {6, 4}
               };
@@ -161,6 +160,26 @@ public class ArrayAlgorithms {
     return totalSum;
 
   }
+
+  public int[][] transpose(int[][] array) {
+    if (array == null || array.length == 0) {
+      return array;
+    }
+    int width = array.length;
+    int height = array[0].length; // this must be first column 
+
+    int[][] new_array = new int[height][width];
+
+    for (int i = 0; i < width; i++) {
+      for (int j = 0; j < height; j++) {
+        new_array[j][i] = new_array[i][j];
+      }
+
+    }
+    return new_array;
+
+  }
+
 
 
 }
