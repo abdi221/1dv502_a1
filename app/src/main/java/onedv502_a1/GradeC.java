@@ -1,5 +1,6 @@
 package onedv502_a1;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -43,9 +44,35 @@ public class GradeC {
   }
 
   /**
-   * Solution to the 3D arrays task.
+   * Solution to the 2D arrays task.
    */
   public void arrays2D() {
+    ArrayAlgorithms arryalgo = new ArrayAlgorithms();
+    ArrayList<Integer> elements = new ArrayList<>();
+    System.out.println("Enter the number of columns: ");
+    int col = scanner.nextInt();
+    System.out.println("Enter the number of rows");
+    int rows = scanner.nextInt();
+    int[][] userArray = new int[rows][col];
+    System.out.println("Give me some elements: ");
+    elements.add(scanner.nextInt());
+    for (int i = 0; i <= 4; i++) {
+      try {
+        if (i == 1) {
+          int sum = arryalgo.TheSum(userArray);
+          System.out.println("The sum of the elements in the array: " + sum);
+        } else if (i == 2) {
+
+        }
+      } catch (IllegalArgumentException e) {
+
+      }
+    }
+
+    for (int i = 0; i <= 9; i++) {
+
+    }
+    
 
   }
 

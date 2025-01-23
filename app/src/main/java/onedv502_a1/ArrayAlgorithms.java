@@ -144,12 +144,11 @@ public class ArrayAlgorithms {
     return arrayShuffle;
   }
 
-  public int sum(int[][] sum) {
+  public int TheSum(int[][] sum) {
     int[][] array = {
-                {5, 2}, 
-                {9, 8}, 
-                {1, 3, 7,}, 
-                {6, 4}
+                {5, 2, 9}, 
+                {8, 1, 3}, 
+                {7, 6, 4}, 
               };
     int totalSum = 0;
     for (int i = 0; i < array.length; i++) {
@@ -188,7 +187,7 @@ public class ArrayAlgorithms {
 
     int totalSum = 0;
     for (int i = 0; i < theSum.length; i++) {
-      totalSum += theSum[i][i];
+      totalSum += theSum[i][i]; // diagonal matrices where row == column
     }
     return totalSum;
 
