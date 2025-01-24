@@ -144,19 +144,21 @@ public class ArrayAlgorithms {
     return arrayShuffle;
   }
 
-  public int TheSum(int[][] sum) {
+  public int sum(int[][] sum) {
+    // int realSum = 21;
     int[][] array = {
-                {5, 2, 9}, 
-                {8, 1, 3}, 
-                {7, 6, 4}, 
+            { 1, 2, 3 },
+            { 4, 5, 6 } 
               };
     int totalSum = 0;
     for (int i = 0; i < array.length; i++) {
       for (int j = 0; j < array[i].length; j++) {
         totalSum += array[i][j];
       }
+      System.out.println("total sum of array; "+totalSum);
     }
     return totalSum;
+
 
   }
 

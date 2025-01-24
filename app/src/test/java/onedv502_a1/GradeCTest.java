@@ -64,7 +64,7 @@ public class GradeCTest {
   }
 
 
-  /*@Test
+  @Test
   public void arrays2d_test() {
     // Tests that the arrays2D method works correctly.
     
@@ -100,7 +100,7 @@ public class GradeCTest {
     // Tests that the diagonalSum method returns 0 if the array is not square.
     assertEquals(0, arrayAlgorithms.diagonalSum(numbers));
     
-  }*/
+  }
 
 
   /*@Test

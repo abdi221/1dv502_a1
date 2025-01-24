@@ -98,8 +98,9 @@ public class App {
   
   }
 
-  public void gradc() {
-    calc.calculator(scanner);
+  public void gradc() throws InterruptedException {
+    // calc.calculator(scanner);
+    calc.arrays2D();
   }
 
 
@@ -107,9 +108,10 @@ public class App {
    * the main method to run the different tasks.
    *
    * @param args help to retrieve input from the console.
-   *
-   */
-  public static void main(String[] args) {
+      * @throws InterruptedException 
+      *
+      */
+     public static void main(String[] args) throws InterruptedException {
     App app = new App();
     // app.hello();
     // app.seconds();
